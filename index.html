@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahma — Marketing Strategist & AI-Powered Creator</title>
+  <meta name="description" content="Rahma is a Marketing Strategist, AI-Powered Creator, and Digital Innovator who combines marketing, AI, and automation to build intelligent systems and scalable solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-trail" class="cursor-trail"></div>
+
+  <!-- Animated Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ─────────────────── NAV ─────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-r">R</span><span class="logo-text">ahma</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Connect</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─────────────────── HERO ─────────────────── -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade">
+        <span class="badge-dot"></span>
+        Available for Projects
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line reveal-up" style="--d:0.1s">Marketing</span>
+        <span class="title-line title-gradient reveal-up" style="--d:0.3s">Strategist</span>
+        <span class="title-divider reveal-up" style="--d:0.5s">×</span>
+        <span class="title-line reveal-up" style="--d:0.7s">AI-Powered</span>
+        <span class="title-line title-gradient-2 reveal-up" style="--d:0.9s">Creator</span>
+      </h1>
+
+      <p class="hero-subtitle reveal-fade" style="--d:1.1s">
+        I combine <span class="highlight-blue">marketing strategy</span>,
+        <span class="highlight-violet">artificial intelligence</span>, and
+        <span class="highlight-pink">automation engineering</span> to build
+        intelligent systems that scale, convert, and grow on autopilot.
+      </p>
+
+      <div class="hero-cta-group reveal-fade" style="--d:1.3s">
+        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost" id="hero-btn-contact">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-fade" style="--d:1.5s">
+        <div class="stat-item">
+          <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span><span class="stat-plus">×</span>
+          <span class="stat-label">Avg. Growth Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-scale" style="--d:0.6s">
+      <div class="hero-sphere">
+        <div class="sphere-core"></div>
+        <div class="sphere-ring ring-1"></div>
+        <div class="sphere-ring ring-2"></div>
+        <div class="sphere-ring ring-3"></div>
+        <div class="sphere-dot dot-1"></div>
+        <div class="sphere-dot dot-2"></div>
+        <div class="sphere-dot dot-3"></div>
+        <div class="sphere-dot dot-4"></div>
+      </div>
+      <div class="floating-card fc-1">
+        <span class="fc-icon">⚡</span>
+        <span class="fc-text">AI Systems</span>
+      </div>
+      <div class="floating-card fc-2">
+        <span class="fc-icon">📈</span>
+        <span class="fc-text">Growth Strategy</span>
+      </div>
+      <div class="floating-card fc-3">
+        <span class="fc-icon">🤖</span>
+        <span class="fc-text">Automation</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─────────────────── ABOUT ─────────────────── -->
+  <section id="about">
+    <div class="neon-connector connector-1"></div>
+
+    <div class="container">
+      <div class="section-tag reveal-fade">// about.me</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title reveal-up">
+            Not just a marketer.<br/>
+            <span class="gradient-text">A systems thinker.</span>
+          </h2>
+
+          <div class="about-story reveal-fade" style="--d:0.2s">
+            <p>I didn't start with marketing — I started with a question: <em>"Why do some businesses grow effortlessly while others struggle?"</em> The answer, I discovered, wasn't luck. It was <strong>intelligent systems</strong>.</p>
+          </div>
+
+          <div class="about-story reveal-fade" style="--d:0.4s">
+            <p>Today, I sit at the crossroads of <span class="highlight-blue">creative strategy</span> and <span class="highlight-violet">technical execution</span> — building automated pipelines, AI-powered campaigns, and data-driven frameworks that don't just attract customers, they retain and delight them.</p>
+          </div>
+
+          <div class="about-story reveal-fade" style="--d:0.6s">
+            <p>My work isn't just about clicks and conversions. It's about creating <span class="highlight-pink">scalable intelligence</span> — systems that learn, adapt, and perform, even while you sleep.</p>
+          </div>
+
+          <div class="about-badges reveal-fade" style="--d:0.8s">
+            <span class="about-badge">Strategic Thinker</span>
+            <span class="about-badge">AI Practitioner</span>
+            <span class="about-badge">Systems Builder</span>
+            <span class="about-badge">Growth Architect</span>
+          </div>
+        </div>
+
+        <div class="about-right reveal-scale" style="--d:0.3s">
+          <div class="about-card-main">
+            <div class="about-avatar">
+              <div class="avatar-inner">R</div>
+              <div class="avatar-ring"></div>
+              <div class="avatar-glow"></div>
+            </div>
+            <h3>Rahma</h3>
+            <p class="about-role">Marketing & AI Specialist</p>
+            <div class="about-traits">
+              <div class="trait">
+                <div class="trait-bar"><div class="trait-fill" style="--w:95%"></div></div>
+                <span>Marketing Strategy</span>
+              </div>
+              <div class="trait">
+                <div class="trait-bar"><div class="trait-fill" style="--w:90%"></div></div>
+                <span>AI & Automation</span>
+              </div>
+              <div class="trait">
+                <div class="trait-bar"><div class="trait-fill" style="--w:88%"></div></div>
+                <span>Business Thinking</span>
+              </div>
+              <div class="trait">
+                <div class="trait-bar"><div class="trait-fill" style="--w:85%"></div></div>
+                <span>Systems Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── SKILLS ─────────────────── -->
+  <section id="skills">
+    <div class="neon-connector connector-2"></div>
+    <div class="container">
+      <div class="section-tag reveal-fade">// capabilities.stack</div>
+      <h2 class="section-title text-center reveal-up">
+        What I <span class="gradient-text">Bring</span> to the Table
+      </h2>
+      <p class="section-sub reveal-fade" style="--d:0.2s">Three domains. One integrated intelligence.</p>
+
+      <div class="skills-grid">
+
+        <!-- Marketing -->
+        <div class="skill-category reveal-up" style="--d:0.1s">
+          <div class="skill-cat-header">
+            <div class="cat-icon cat-icon-blue">📊</div>
+            <h3>Marketing & Business</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="flip-card" id="skill-1">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">🎯</span>
+                  <span>Digital Marketing Strategy</span>
+                </div>
+                <div class="flip-back">
+                  <p>Full-funnel strategy design — from awareness to conversion — tuned for sustainable growth.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-2">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">📱</span>
+                  <span>Social Media Growth</span>
+                </div>
+                <div class="flip-back">
+                  <p>Algorithmic content systems that build engaged audiences and convert followers into buyers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-3">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">💎</span>
+                  <span>Branding & Positioning</span>
+                </div>
+                <div class="flip-back">
+                  <p>Crafting brand identities that stick — memorable, differentiated, and deeply resonant.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-4">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">🗺️</span>
+                  <span>Customer Journey Design</span>
+                </div>
+                <div class="flip-back">
+                  <p>Mapping and optimizing every touchpoint to maximize satisfaction and lifetime value.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-5">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">📈</span>
+                  <span>Market Analysis</span>
+                </div>
+                <div class="flip-back">
+                  <p>Deep competitive intelligence and data-driven insights that shape winning strategies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="skill-category reveal-up" style="--d:0.3s">
+          <div class="skill-cat-header">
+            <div class="cat-icon cat-icon-violet">🧠</div>
+            <h3>AI & Technology</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="flip-card" id="skill-6">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">✍️</span>
+                  <span>AI Content Creation</span>
+                </div>
+                <div class="flip-back">
+                  <p>Generating high-quality, on-brand content at scale using advanced AI models and fine-tuned prompts.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-7">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">⚗️</span>
+                  <span>Prompt Engineering</span>
+                </div>
+                <div class="flip-back">
+                  <p>Architecting prompts that extract maximum performance from AI models for any business use case.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-8">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">⚙️</span>
+                  <span>Intelligent Workflows</span>
+                </div>
+                <div class="flip-back">
+                  <p>Designing AI-powered pipelines that handle complex tasks autonomously, from input to output.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card" id="skill-9">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <span class="skill-emoji">📊</span>
+                  <span>Data-Driven Decisions</span>
+                </div>
+                <div class="flip-back">
+                  <p>Using analytics and AI insights to make strategic decisions backed by real evidence, not guesswork.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automation -->
+        <div class="skill-category skill-automation reveal-up" style="--d:0.5s">
+          <div class="skill-cat-header">
+            <div class="cat-icon cat-icon-pink">⚡</div>
+            <h3>Automation Engineering</h3>
+            <span class="cat-badge">Core Speciality</span>
+          </div>
+          <div class="automation-grid">
+            <div class="auto-card" id="auto-1">
+              <div class="auto-icon">🤖</div>
+              <div class="auto-content">
+                <h4>Intelligent Chatbot Systems</h4>
+                <p>Building AI-powered chatbots for restaurants and businesses that handle order intake, customer queries, and upselling — 24/7, without human intervention.</p>
+              </div>
+              <div class="auto-glow"></div>
+            </div>
+            <div class="auto-card" id="auto-2">
+              <div class="auto-icon">🗄️</div>
+              <div class="auto-content">
+                <h4>Data Collection & Storage Pipelines</h4>
+                <p>Designing workflows that automatically capture user data from forms, chats, and interactions — then process and organize it directly into Google Sheets or databases.</p>
+              </div>
+              <div class="auto-glow"></div>
+            </div>
+            <div class="auto-card" id="auto-3">
+              <div class="auto-icon">🔗</div>
+              <div class="auto-content">
+                <h4>Tool Integration Systems</h4>
+                <p>Connecting disparate tools and platforms using no-code/low-code solutions (Make, Zapier, n8n) — creating unified ecosystems that communicate automatically.</p>
+              </div>
+              <div class="auto-glow"></div>
+            </div>
+            <div class="auto-card" id="auto-4">
+              <div class="auto-icon">🏗️</div>
+              <div class="auto-content">
+                <h4>Smart Business Pipelines</h4>
+                <p>Eliminating manual, repetitive work by designing intelligent pipelines that route tasks, trigger actions, and notify teams — reducing labor costs significantly.</p>
+              </div>
+              <div class="auto-glow"></div>
+            </div>
+            <div class="auto-card" id="auto-5">
+              <div class="auto-icon">📧</div>
+              <div class="auto-content">
+                <h4>Marketing Automation Systems</h4>
+                <p>End-to-end automated marketing: email sequences, lead tracking funnels, SMS follow-ups, and response systems — all running autonomously to nurture and convert leads.</p>
+              </div>
+              <div class="auto-glow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── PROJECTS ─────────────────── -->
+  <section id="projects">
+    <div class="neon-connector connector-3"></div>
+    <div class="container">
+      <div class="section-tag reveal-fade">// projects.showcase</div>
+      <h2 class="section-title text-center reveal-up">
+        Built to <span class="gradient-text">Perform</span>
+      </h2>
+      <p class="section-sub reveal-fade" style="--d:0.2s">Real systems. Real impact. Real results.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" id="proj-1" style="--d:0.1s">
+          <div class="proj-inner">
+            <div class="proj-header">
+              <div class="proj-icon">🍽️</div>
+              <div class="proj-meta">
+                <span class="proj-tag">AI + Automation</span>
+                <span class="proj-year">2024</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Restaurant AI Order System</h3>
+            <p class="proj-brief">A fully autonomous chatbot ecosystem for restaurant operations</p>
+
+            <div class="proj-details">
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot red"></span> Problem
+                </div>
+                <p>Restaurants losing orders, struggling with peak-hour overload, and spending hours on manual order tracking and customer follow-up.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot blue"></span> Solution
+                </div>
+                <p>Built an AI chatbot that takes orders via WhatsApp/Instagram, collects customer data, confirms orders, and automatically populates a live Google Sheet — zero human involvement.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot green"></span> Impact
+                </div>
+                <p>40% reduction in order errors. 3× faster response time. Full customer database built automatically.</p>
+              </div>
+            </div>
+
+            <div class="proj-tech">
+              <span>Make.com</span><span>OpenAI</span><span>WhatsApp API</span><span>Google Sheets</span>
+            </div>
+          </div>
+          <div class="proj-glow"></div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" id="proj-2" style="--d:0.3s">
+          <div class="proj-inner">
+            <div class="proj-header">
+              <div class="proj-icon">🚀</div>
+              <div class="proj-meta">
+                <span class="proj-tag">Marketing</span>
+                <span class="proj-year">2024</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Automated Lead Generation Funnel</h3>
+            <p class="proj-brief">A multi-stage automated marketing system that converts cold traffic to clients</p>
+
+            <div class="proj-details">
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot red"></span> Problem
+                </div>
+                <p>Business struggling with inconsistent lead flow, slow follow-up times, and no systematic way to nurture prospects through the sales cycle.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot blue"></span> Solution
+                </div>
+                <p>Designed a full funnel with targeted ad creative, landing page copy, automated email sequences, lead scoring, and CRM integration — all triggering without manual input.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot green"></span> Impact
+                </div>
+                <p>200% increase in qualified leads. 60% reduction in cost-per-acquisition. Consistent pipeline flow maintained automatically.</p>
+              </div>
+            </div>
+
+            <div class="proj-tech">
+              <span>Meta Ads</span><span>Notion</span><span>ActiveCampaign</span><span>Zapier</span>
+            </div>
+          </div>
+          <div class="proj-glow"></div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" id="proj-3" style="--d:0.5s">
+          <div class="proj-inner">
+            <div class="proj-header">
+              <div class="proj-icon">⚡</div>
+              <div class="proj-meta">
+                <span class="proj-tag">Workflow Automation</span>
+                <span class="proj-year">2025</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Business Intelligence Pipeline</h3>
+            <p class="proj-brief">End-to-end data workflow connecting all business tools into one smart ecosystem</p>
+
+            <div class="proj-details">
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot red"></span> Problem
+                </div>
+                <p>Company operating with siloed tools — data living in 6 different platforms with no unified view, causing decision delays and reporting errors.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot blue"></span> Solution
+                </div>
+                <p>Built an integration layer connecting CRM, email platform, ad accounts, and analytics into a single automated reporting dashboard — with AI-generated weekly summaries.</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-label">
+                  <span class="label-dot green"></span> Impact
+                </div>
+                <p>12 hours/week saved on reporting. Real-time business visibility. AI insights delivered every Monday automatically.</p>
+              </div>
+            </div>
+
+            <div class="proj-tech">
+              <span>n8n</span><span>Airtable</span><span>OpenAI</span><span>Looker Studio</span>
+            </div>
+          </div>
+          <div class="proj-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── CONTACT ─────────────────── -->
+  <section id="contact">
+    <div class="neon-connector connector-4"></div>
+    <div class="container">
+      <div class="section-tag reveal-fade">// contact.init()</div>
+      <h2 class="section-title text-center reveal-up">
+        Let's Build Something <span class="gradient-text">Intelligent</span>
+      </h2>
+      <p class="section-sub reveal-fade" style="--d:0.2s">Have a project? An idea? A problem worth solving? Let's talk.</p>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal-up" style="--d:0.1s">
+          <div class="contact-info-cards">
+            <div class="contact-info-card" id="ci-1">
+              <div class="ci-icon">📧</div>
+              <div class="ci-content">
+                <span class="ci-label">Email</span>
+                <a href="mailto:rahma@example.com" class="ci-value">rahma@example.com</a>
+              </div>
+            </div>
+            <div class="contact-info-card" id="ci-2">
+              <div class="ci-icon">💼</div>
+              <div class="ci-content">
+                <span class="ci-label">LinkedIn</span>
+                <a href="#" class="ci-value">linkedin.com/in/rahma</a>
+              </div>
+            </div>
+            <div class="contact-info-card" id="ci-3">
+              <div class="ci-icon">📍</div>
+              <div class="ci-content">
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Available Globally · Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-quote reveal-fade" style="--d:0.4s">
+            <blockquote>
+              "The best marketing doesn't feel like marketing — it feels like the exact solution you needed."
+            </blockquote>
+            <cite>— Rahma</cite>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-up" style="--d:0.3s">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrap">
+                <input type="text" id="name" name="name" placeholder="What should I call you?" autocomplete="name" />
+                <div class="input-glow"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+                <div class="input-glow"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project">Project Type</label>
+              <div class="input-wrap select-wrap">
+                <select id="project" name="project">
+                  <option value="">Select a service...</option>
+                  <option value="marketing">Marketing Strategy</option>
+                  <option value="ai">AI Systems</option>
+                  <option value="automation">Automation Pipeline</option>
+                  <option value="chatbot">Chatbot Development</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="input-glow"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <div class="input-wrap">
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, your goals, and what you're looking to achieve..."></textarea>
+                <div class="input-glow"></div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <div class="btn-particles"></div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <span>✅</span> Message received! I'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────── FOOTER ─────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-r">R</span><span class="logo-text">ahma</span><span class="logo-dot">.</span>
+      </div>
+      <p class="footer-copy">© 2025 Rahma. Built with intelligence, designed with purpose.</p>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
